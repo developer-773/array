@@ -97,7 +97,7 @@ var arrFB = [];
 elFrom.addEventListener('submit', function (et) {
     et.preventDefault();
     
-    var elFizzInputValue = elFizzInput.value.trim();
+    var elFizzInputValue = Number(elFizzInput.value.trim());
     
     if (elFizzInputValue % 3 == 0 && elFizzInputValue % 5 == 0) {
         arrFB.push(elFizzInputValue);
@@ -110,13 +110,13 @@ elFrom.addEventListener('submit', function (et) {
         arrF.push(elFizzInputValue);
         elFizzResult.textContent = arrF;
         elFizzN.textContent = arrF.length;
+
     }else if(elFizzInputValue % 5 == 0 ) { 
         arrB.push(elFizzInputValue);
         elBuzzResult.textContent = arrB;
         elBuzzN.textContent = arrB.length;
-    }
-    else{
-        alert(`Bu ${elFizzInputValue} soni 3 ga ham 5 ga ham bo'linmaydi.`)
+    }else{
+        alert(`Bu son 3 ga ham 5 ga ham bo'linmaydi.`)
     }
         
 });
