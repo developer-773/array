@@ -115,8 +115,8 @@ elFrom.addEventListener('submit', function (et) {
         arrB.push(elFizzInputValue);
         elBuzzResult.textContent = arrB;
         elBuzzN.textContent = arrB.length;
-    }else{
-        alert(`Bu son 3 ga ham 5 ga ham bo'linmaydi.`)
+    }else {
+        alert(`Bu ${elFizzInputValue} son 3 ga ham 5 ga ham bo'linmaydi.`)
     }
         
 });
